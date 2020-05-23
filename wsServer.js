@@ -27,7 +27,7 @@ wss.on('connection', function connection(ws) {
         s2c_json.message = "hello from ws-server";
         s2c_json.clients_available = wss.clients.size;
 
-
+        
 
         //sending object
         ws.send( JSON.stringify(s2c_json) );
@@ -39,6 +39,8 @@ wss.on('connection', function connection(ws) {
 //        s.clients.forEach(client => {
 //            client.send('接続しているクライアント全てに送信');
 //        });
+
+
 
         //terminate on_message
         console.log(' ');

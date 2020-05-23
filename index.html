@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WebSocket Distribution Server </title>
+</head>
+<body>
+    <h1>WebSocket Distribution Server (ver 1.0.0) </h1>
+    <a href="https://github.com/pcho0712/node-p5-websocket-communication"> github link</a>
+    <ol>
+        <li>heroku create</li>
+        <li>ws server is listening... (port is optional)</li>
+        <li>from client, sending a json-string</li>
+        <li>the server received it, log it</li>
+        <li>then, the server broadcast json-string to all available clients</li>
+        <li>clients receive the json-string</li>
+
+    </ol>
+
+
+    <div id="c_count">
+        <p> Available Clients: [
+        <span id="client_count"> </span>
+        ]
+        (under construction)
+        (current wsServer.js is indevendently working from this html)
+        </p>
+    </div>
+
+
+
+    <footer>
+        <p>Takatoshi Yoshida 2020-05-23</p>
+    </footer>
+</body>
+</html>
