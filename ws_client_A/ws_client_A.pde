@@ -9,6 +9,9 @@ import websockets.*;
 //import org.json.JSONArray;
 
 
+//String target_url = "ws://localhost:5000";
+String target_url = "ws://fathomless-brook-91328.herokuapp.com:5009";
+
 
 WebsocketClient wsc;
 String s2c_msg = "";
@@ -39,7 +42,7 @@ String getTimestamp() {
 void setup() {
   size(400, 400);
 
-  wsc= new WebsocketClient(this, "ws://localhost:5000");
+  wsc= new WebsocketClient(this, target_url);
 
 
   //sending message on opening connection
