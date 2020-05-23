@@ -41,6 +41,7 @@ void setup() {
 
   wsc= new WebsocketClient(this, "ws://localhost:5000");
 
+
   //sending message on opening connection
   s2c_jso = new JSONObject();
   c2s_jso = new JSONObject();

@@ -4,9 +4,9 @@
 //
 
 var WebSocketServer = require('ws').Server;
-var wss = new WebSocketServer({ port: 5000 });
+var wss = new WebSocketServer({ port: process.env.PORT || 5000 });
 
-console.log("listening port :5000");
+console.log("listening port : "+ process.env.PORT || 5000);
 
 wss.on('connection', function connection(ws) {
     console.log('connection');
