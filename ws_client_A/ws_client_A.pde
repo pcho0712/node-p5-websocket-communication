@@ -10,7 +10,7 @@ import websockets.*;
 
 
 //String target_url = "ws://localhost:5000";
-String target_url = "ws://fathomless-brook-91328.herokuapp.com:5009";
+String target_url = "ws://fathomless-brook-91328.herokuapp.com";
 
 
 WebsocketClient wsc;
@@ -60,6 +60,9 @@ void display_s2c_text(JSONObject _s2c_jso, PVector _disp_pos) {
   translate(_disp_pos.x, _disp_pos.y);
 
   //display control
+  fill(20,200,20);
+  text("WebSocket Server at "+target_url,0,0);
+  
   color c_color = color(0, 0, 0);
   if (!_s2c_jso.isNull("client_name")) {
     String s2c_c_name = _s2c_jso.getString("client_name");
@@ -78,9 +81,9 @@ void display_s2c_text(JSONObject _s2c_jso, PVector _disp_pos) {
     String s2c_c_name = _s2c_jso.getString("client_name");
     //display title
     fill(c_color);
-    text("client_name: "+ s2c_c_name, -2, 0);
+    text("client_name: "+ s2c_c_name, 0, 20);
     fill(80);
-    line(0, 0, 120, 0);
+    line(0, 22, 120, 22);
   }
 
   //values
@@ -94,7 +97,7 @@ void display_s2c_text(JSONObject _s2c_jso, PVector _disp_pos) {
     //display values  
     for (int i=0; i<jsa_s2c_values.size(); i++) {
       fill(0);
-      text(""+s2c_values.get(i), 0, 20+i*20);
+      text(""+s2c_values.get(i), 0, 40+i*20);
     }
   }
   popMatrix();
@@ -106,10 +109,11 @@ void draw() {
 
   //display s2c message
   fill(0);
-  text("s2c_log: "+ c_name, 20, 300);
-  text(s2c_log, 20, 340);
+  text("s2c_log: "+ c_name, 20, 330);
+  text(s2c_log, 20, 370);
 
   /* START: Vizualize S2C */
+
   display_s2c_text(s2c_jso, new PVector(20, 20));
 
   /* END: Vizualize S2C */
