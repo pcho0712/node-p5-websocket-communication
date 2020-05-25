@@ -10,6 +10,9 @@ WebSocket Server on node.js for Broadcasting JSON
 -- {json / ws} --> 
 (websocket_client / p5)
 
+Current Server Location: "ws://fathomless-brook-91328.herokuapp.com"
+
+
 
 ## usage-200525
 
