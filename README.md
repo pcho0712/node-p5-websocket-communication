@@ -11,6 +11,16 @@ WebSocket Server on node.js for Broadcasting JSON
 (websocket_client / p5)
 
 
+## usage-200525
+
+1. launch ws_client_A
+2. launch ws_client_B
+
+(demo-video) https://youtu.be/GFv-NpQKzsg
+
+[![](http://img.youtube.com/vi/GFv-NpQKzsg/0.jpg)](http://www.youtube.com/watch?v=GFv-NpQKzsg "node-p5-websocket-communication")
+
+
 ## remaining tasks
 - Processing Clients
   - encupsulating communication components (ie. websocket, json etc) into a utility class
@@ -25,16 +35,6 @@ WebSocket Server on node.js for Broadcasting JSON
 - WebSocket Server on Node
   - html visualization
   - sample json broadcasting when available-clients num == 1
-
-## usage-200525
-
-1. launch ws_client_A
-2. launch ws_client_B
-
-(demo-video) https://youtu.be/GFv-NpQKzsg
-
-[![](http://img.youtube.com/vi/GFv-NpQKzsg/0.jpg)](http://www.youtube.com/watch?v=GFv-NpQKzsg "node-p5-websocket-communication")
-
 
 
 ## misc
