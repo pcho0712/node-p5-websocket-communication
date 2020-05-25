@@ -17,8 +17,9 @@ WebSocket Server on node.js for Broadcasting JSON
 1. launch ws_client_A
 2. launch ws_client_B
 
-(demo)
-https://youtu.be/GFv-NpQKzsg
+(demo-video) https://youtu.be/GFv-NpQKzsg
+[![](http://img.youtube.com/vi/GFv-NpQKzsg/0.jpg)](http://www.youtube.com/watch?v=GFv-NpQKzsg "node-p5-websocket-communication")
+
 
 
 ## misc
