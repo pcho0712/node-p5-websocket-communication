@@ -15,12 +15,16 @@ WebSocket Server on node.js for Broadcasting JSON
 - Processing Clients
   - encupsulating communication components (ie. websocket, json etc) into a utility class
   - asynchronous visualization for incoming json
+  - add Arduino communication in sample
+  - error handling when the server is down
+  
 
 - Other Clients
- - make a simple sample in other platforms (eg. touch-designer, html+js etc.)
+  - make a simple sample in other platforms (eg. touch-designer, html+js etc.)
  
 - WebSocket Server on Node
   - html visualization
+  - sample json broadcasting when available-clients num == 1
 
 ## usage-200525
 
