@@ -11,6 +11,16 @@ WebSocket Server on node.js for Broadcasting JSON
 (websocket_client / p5)
 
 
+## remaining tasks
+- Processing Clients
+  - encupsulating communication components (ie. websocket, json etc) into a utility class
+  - asynchronous visualization for incoming json
+
+- Other Clients
+ - make a simple sample in other platforms (eg. touch-designer, html+js etc.)
+ 
+- WebSocket Server on Node
+  - html visualization
 
 ## usage-200525
 
